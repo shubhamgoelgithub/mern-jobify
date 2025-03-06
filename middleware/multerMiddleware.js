@@ -11,7 +11,7 @@ const upload = multer({ storage });
 
 const parser = new DataURIParser();
 export const formatImage = (file) => {
-  const fileExtension = path.extname(file.originalName).toString();
+  const fileExtension = path.extname(file.originalname).toString();
   return parser.format(fileExtension, file.buffer).content;
 };
 
