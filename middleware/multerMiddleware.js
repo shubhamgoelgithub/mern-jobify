@@ -3,7 +3,7 @@
  *   All rights reserved.
  */
 import multer from "multer";
-import DataURIParser from "datauri/parser";
+import DataURIParser from "datauri/parser.js";
 import path from "path";
 
 const storage = multer.memoryStorage();
